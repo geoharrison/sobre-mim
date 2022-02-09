@@ -1,0 +1,114 @@
+package conta;
+
+public class Cliente {
+	
+	private String name;
+	private int conta;
+	private double saldo;
+
+	
+	public Cliente(String name, int conta) {
+		this.name = name;
+		this.conta = conta;
+		
+	}
+	public Cliente(String name, int conta, double depinicial) {
+		this.name = name;
+		this.conta = conta;
+		deposito(depinicial);
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getConta() {
+		return conta;
+	}
+	
+	public double getsaldo() {
+		return saldo;
+	}
+	
+	public void saque(double valor) {
+		saldo -= valor + 5.0;
+	}
+	public void deposito(double valor) {
+		saldo += valor;
+	}
+	
+	
+	
+	public String toString() {
+		return "Cliente "
+				+ name
+				+ ", conta: "
+				+ conta
+				+ "Saldo: R$: "
+				+ String.format("%.2f", saldo);
+	}
+	
+}
+
+
+
+//
+Program
+package java;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import conta.Cliente;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		Cliente cliente;
+		
+		System.out.print("Nome do ciente: ");
+		sc.nextLine();
+		String name = sc.nextLine();
+		System.out.println();
+		System.out.print("Numero da conta: ");
+		int conta = sc.nextInt();
+		System.out.print("Deposito inicial (y/n)?: ");
+		char response = sc.next().charAt(0);
+		
+		if (response == 'y') {
+			System.out.println("Valor do deposito: ");
+			double depinicial = sc.nextDouble();
+			cliente = new Cliente(name, conta, depinicial);
+		}
+		else {
+			cliente = new Cliente(name, conta);
+		}
+		
+		System.out.println();
+		System.out.println("Dados do deposito: ");
+		System.out.println(cliente);
+		
+		System.out.println();
+		System.out.print("valor do deposito: ");
+		double valordeposito = sc.nextDouble();
+		cliente.deposito(valordeposito);
+		System.out.println();
+		System.out.print(cliente);
+		
+		System.out.println();
+		System.out.print("Valor do saque: ");
+		double valorsaque = sc.nextDouble();
+		cliente.saque(valorsaque);
+		System.out.println();
+		System.out.println(cliente);
+		
+		
+		
+		sc.close();
+	}
+
+}
