@@ -5,7 +5,7 @@ Começando a Evoluir
 * Início: Agosto de 2021.
 * Formação: Relações Públicas. 
 * Início: Agosto de 1996. **Trancado**. ESURP 
-* Curso de Manutenção de computadores em Hardwhare. LEAUT
+* Curso de Manutenção de computadores em Hardware. LEAUT
 * Eletrônica básica. LEAUT.
 * Desenvolvimento em JAVA. UDEMY, 2021.
 * Exeriência: Técnico em eletrônica na Pro AMbiente. 1994 - 1996.
