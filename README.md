@@ -10,3 +10,7 @@ Começando a Evoluir
 * Desenvolvimento em JAVA. UDEMY, 2021.
 * Exeriência: Técnico em eletrônica na Pro AMbiente. 1994 - 1996.
 * Gerente: Pro Ambiente. 1997 - 2016. **Responsável pelo pesoal de vendas e manutençao de produtos eletrônicos**
+
+## Links Úteis
+[UDEMY Cursos](https://www.udemy.com/)
+[VS CODE](https://code.visualstudio.com/)
